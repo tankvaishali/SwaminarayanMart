@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+:root {
+  --green--: #4aab3d;
+  --darkgreen--: #062302;
+  --lightgray--: rgb(161, 161, 161);
+  --white--: white;
+}
+.gray{
+  color: var(--lightgray--);
+}
+.pera{
+  font-size: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header start */
+
+.bg_color {
+  backdrop-filter: blur(15px) !important;
+  background-color: rgba(0, 31, 15, 0.336) !important;
+  /* background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.6), rgba(255,255,255,0.6)); */
+}
+.logoset {
+  width: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lg_header .sec {
+  /* background-color: white; */
+  color: var(--primarycolor--) !important;
+  border-radius: 5px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.lg_header .sec::after {
+  content: "";
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  background-color: var(--darkgreen--);
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.lg_header .sec:hover::after {
+  height: 100%;
+  top: 100;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.lg_header .sec:hover .nav-link {
+  color: white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ofcv_header .nav-link {
+  color: var(--green--) !important;
 }
+
+.ofcv_header .nav-link:hover,
+.ofcv_header .nav-link:focus {
+  background: var(--darkgreen--);
+  color: white !important;
+}
+
+.lg_header .nav-link.active,
+.ofcv_header .nav-link.active {
+  background-color: var(--darkgreen--) !important;
+  color: white !important;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.lg_header .nav-link {
+  color: white !important;
+  /* color: var(--green--) !important; */
+}
+
+.indx {
+  z-index: 9998;
+}
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+/* Header end */
