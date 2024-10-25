@@ -10,38 +10,38 @@ function Product() {
   let ProductItemlist = [
     {
       id: 1,
-      image1: require("../Assets/Image/2023-03-smart-grocery-savings-blog.jpeg"),
-      image2: require("../Assets/Image/2023-03-smart-grocery-savings-blog.jpeg"),
-      name: "solar panel",
-      tittle: "solar panel technology",
+      image1: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+      image2: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+      name: "lorem ipsum",
+      tittle: "lorem ipsum dolor ",
     },
     {
       id: 2,
-      image1: require("../Assets/Image/2023-03-smart-grocery-savings-blog.jpeg"),
-      image2: require("../Assets/Image/2023-03-smart-grocery-savings-blog.jpeg"),
-      name: "solar panel",
-      tittle: "solar panel technology",
+      image1: require("../Assets/Image/IMG-20241025-WA0006.jpg"),
+      image2: require("../Assets/Image/IMG-20241025-WA0006.jpg"),
+      name: "lorem ipsum",
+      tittle: "lorem ipsum dolor ",
     },
     {
       id: 3,
-      image1: require("../Assets/Image/full-length-portrait-cheery-couple_171337-2247.jpg"),
-      image2: require("../Assets/Image/full-length-portrait-cheery-couple_171337-2247.jpg"),
-      name: "solar panel",
-      tittle: "solar panel technology",
+      image1: require("../Assets/Image/107224930-1681412037532-gettyimages-1470350052-dsc05912.jpeg"),
+      image2: require("../Assets/Image/107224930-1681412037532-gettyimages-1470350052-dsc05912.jpeg"),
+      name: "lorem ipsum",
+      tittle: "lorem ipsum dolor ",
     },
     {
       id: 4,
-      image1: require("../Assets/Image/product_bg.jpg"),
-      image2: require("../Assets/Image/product_bg.jpg"),
-      name: "solar panel",
-      tittle: "solar panel technology",
+      image1: require("../Assets/Image/image_2024_10_25T12_12_48_549Z.png"),
+      image2: require("../Assets/Image/image_2024_10_25T12_12_48_549Z.png"),
+      name: "lorem ipsum",
+      tittle: "lorem ipsum dolor ",
     },
     {
       id: 5,
-      image1: require("../Assets/Image/107224930-1681412037532-gettyimages-1470350052-dsc05912.jpeg"),
-      image2: require("../Assets/Image/107224930-1681412037532-gettyimages-1470350052-dsc05912.jpeg"),
-      name: "solar panel",
-      tittle: "solar panel technology",
+      image1: require("../Assets/Image/full-length-portrait-cheery-couple_171337-2247.jpg"),
+      image2: require("../Assets/Image/full-length-portrait-cheery-couple_171337-2247.jpg"),
+      name: "lorem ipsum",
+      tittle: "lorem ipsum dolor ",
     },
   ];
   const settings = {
@@ -153,7 +153,7 @@ function Product() {
                                 </div>
                                 <div className="p-2">
                                   <div className="fw-bold">{product.name}</div>
-                                  <div className="fw-bold fs-2">{product.tittle}</div>
+                                  <div className="fw-bold fs-3">{product.tittle}</div>
                                 </div>
                               </div>
                             </div>

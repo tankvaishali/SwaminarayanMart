@@ -3,10 +3,11 @@ import { Link, NavLink } from "react-router-dom";
 import { FaHome, FaSolarPanel } from "react-icons/fa";
 import { IoPersonCircle } from "react-icons/io5";
 import { GrServices } from "react-icons/gr";
-import { MdWifiCalling3 } from "react-icons/md";
+import { MdOutlineSettings, MdWifiCalling3 } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { BsGraphUpArrow } from "react-icons/bs";
+import { TiShoppingCart } from "react-icons/ti";
 
 function Header() {
   return (
@@ -81,18 +82,7 @@ function Header() {
                 </div>
               </li>
 
-              <li className="nav-item m-1">
-                <div class="sec h-100 mx-2 text-center">
-                  <a
-                    href="/#whyus"
-                    className="nav-link headmenu maincolor fw-medium  p-2 py-3 text-center"
-                    aria-current="page"
-                    activeClassName="active"
-                  >
-                    Why Us
-                  </a>
-                </div>
-              </li>
+             
 
               <li className="nav-item m-1">
                 <div class="sec h-100 mx-2 text-center">
@@ -107,18 +97,7 @@ function Header() {
                 </div>
               </li>
 
-              <li className="nav-item m-1">
-                <div class="sec h-100 mx-2 text-center">
-                  <a
-                    href="/#testimonial"
-                    className="nav-link headmenu maincolor fw-medium  p-2 py-3 text-center"
-                    aria-current="page"
-                    activeClassName="active"
-                  >
-                    Testimonial
-                  </a>
-                </div>
-              </li>
+              
 
               <li className="nav-item m-1">
                 <div class="sec h-100 mx-2 text-center">
@@ -187,16 +166,6 @@ function Header() {
             Home
           </a>
           <a
-            href="/#product"
-            className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
-            activeClassName="active"
-          >
-            <span className="fs-2 pe-2">
-              <FaSolarPanel />
-            </span>{" "}
-            Product
-          </a>
-          <a
             href="/#aboutus"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
             activeClassName="active"
@@ -206,38 +175,31 @@ function Header() {
             </span>{" "}
             About Us
           </a>
-
-
           <a
-            href="/#whyus"
+            href="/#product"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
             activeClassName="active"
           >
             <span className="fs-2 pe-2">
-              <GrServices />
+              <TiShoppingCart />
             </span>{" "}
-            Why Us
+            Product
           </a>
+   
+
+
+    
           <a
             href="/#service"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
             activeClassName="active"
           >
             <span className="fs-2 pe-2">
-              <BsGraphUpArrow />
+              <MdOutlineSettings />
             </span>{" "}
             service
           </a>
-          <a
-            href="/#testimonial"
-            className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
-            activeClassName="active"
-          >
-            <span className="fs-2 pe-2">
-              <CgProfile />
-            </span>{" "}
-            Testimonial
-          </a>
+         
           <a
             href="/#contactus"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"

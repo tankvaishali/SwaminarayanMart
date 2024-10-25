@@ -14,7 +14,7 @@
 }
 
 .tittle {
-  font-size: 35px;
+  font-size: 40px;
   background: linear-gradient(to right, #49ca70, #ff7e00, #ff8000, #9c4e00);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -24,9 +24,11 @@
 
 .sectittle {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--darkgreen--);
   margin-top: -20px;
+  letter-spacing: -0.8px;
+  word-spacing: 1px;
 }
 
 /* image shine start */

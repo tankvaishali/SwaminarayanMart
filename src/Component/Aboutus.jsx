@@ -69,7 +69,7 @@ function Aboutus() {
          <div className="tittle"><TittlesAll tittle="ABOUT US " /></div>
                
                 <div className="sectittle"       data-aos="fade-down"
-                data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit amet.</div>
+                data-aos-duration="1500" data-aos-once="true">We Provide Bringing You Essentials  Everyday</div>
               <div className="pera py-3">
                 Our organization is proficient in manufacturing and supplying a
                 premium quality range of Commercial Kitchen Equipment. The

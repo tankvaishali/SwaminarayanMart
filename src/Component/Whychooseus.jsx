@@ -20,7 +20,7 @@ function Whychooseus() {
         },
         {
             icon: <FaSearchDollar className='fs-1' />,
-            title: "Modern Design",
+            title: "Mega Savings",
             description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, eos!"
         }
     ];
@@ -35,7 +35,7 @@ function Whychooseus() {
                         </div>
                     </div>
                     <h2 className='text-center  sectittle' data-aos="fade-down"
-                        data-aos-duration="1500" data-aos-once="true">Why Choose Artima</h2>
+                        data-aos-duration="1500" data-aos-once="true">Your One-Stop Shop for Everything You Need</h2>
                     <div className="row">
                         <div className='col-12 col-md-6 col-lg-6 pt-5'>
                             <div className="h-100">
@@ -57,7 +57,7 @@ function Whychooseus() {
                                 data-aos-duration="1500" data-aos-once="true">
                                 <div className='test-shine h-100'>
 
-                                    <img src={require("../Assets/Image/3d-illustration-female-character-grocery-store_23-2150953964.jpg")} className='image-1 img-fluid w-100 h-100 object-fit-cover' alt="" />
+                                    <img src={require("../Assets/Image/image_2024_10_25T12_19_23_791Z.png")} className='image-1 img-fluid w-100 h-100 object-fit-cover' alt="" />
                                 </div>
                             </div>
                         </div>
