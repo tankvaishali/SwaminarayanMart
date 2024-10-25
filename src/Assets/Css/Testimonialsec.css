@@ -13,7 +13,12 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-align: center;
-    font-size: 2rem;
+        font-size: 35px;
+        background: linear-gradient(  #49ca70,#49ca70, #FF7E00,#ff8000,#9c4e00); 
+        -webkit-text-fill-color: transparent; 
+        -webkit-background-clip: text; 
+        font-weight: 700;
+        text-shadow: 8px 9px 10px #3d47484a; 
   }
   
   @media (max-width: 768px) {

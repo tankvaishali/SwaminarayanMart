@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import { IoMdStar } from 'react-icons/io';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import "../Assets/Css/Testimonialsec.css";
+import TittlesAll from './TittleAll';
 
 function Testimonial() {
 
@@ -45,11 +46,16 @@ function Testimonial() {
 
     return (
         <>
-            <div className='testimonial overflow-hidden'>
+            <div className='testimonial overflow-hidden my-3'>
                 <div className="container">
-                    <div className="row align-items-center">
-                        <div className='col-lg-1 d-none d-lg-block m-0 p-0 mt-1'>
-                            <h2 className='testimonial-title ms-auto m-0'>Testimonial</h2>
+                    <div className="row align-items-center mt-0 mt-lg-5 pt-0 pt-lg-4"   data-aos-duration="1800"
+                                                data-aos="zoom-in"
+                                                data-aos-once="true">
+                        <div className='col-lg-1 d-none d-lg-block m-0 p-0 mt-1 '>
+                            {/* <h2 className='testimonial-title ms-auto m-0'>Testimonial</h2> */}
+                       <div className=' testimonial-title ms-auto '>
+                       <TittlesAll tittle="TESTIMONIAL"/>
+                       </div>
                         </div>
                         <div className='col-lg-11 m-0 p-0'>
                             <Slider {...settings}>
@@ -57,10 +63,13 @@ function Testimonial() {
                                     <div key={testimonial.id}>
                                         <div className='row g-4 p-4'>
                                             <div className='col-12 col-md-5 col-lg-3'>
-                                                <img src={testimonial.image} className='w-100 h-100 object-fit-cover rounded-5' alt="Testimonial" />
+                                                <div className='test-shine h-100'>
+                                                <img src={testimonial.image} className='w-100 h-100 object-fit-cover rounded-5' alt="Testimonial " />
+                                                </div>
                                             </div>
                                             <div className='col-12 col-md-7 col-lg-9'>
-                                                <div className="h-100 rounded-5 shadow">
+                                                <div className="h-100 rounded-5 shadow"
+                                                >
                                                     <div className='p-5'>
                                                         <h3>{testimonial.name}</h3>
                                                         <div>

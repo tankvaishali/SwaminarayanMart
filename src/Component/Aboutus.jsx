@@ -21,22 +21,27 @@ function Aboutus() {
 
   let aboutimage = [
     {
-      image: require("../Assets/Image/107224930-1681412037532-gettyimages-1470350052-dsc05912.jpeg")
+      image: require("../Assets/Image/homeslider1 (1).jpg")
     },
 
     {
-      image: require("../Assets/Image/2023-03-smart-grocery-savings-blog.jpeg")
+      image: require("../Assets/Image/homeslider1 (2).jpg")
     },
+    {
+      image: require("../Assets/Image/homeslider1 (3).jpg")
+    },
+
 
   ]
   return (
     <>
-      <div className="container my-5 bg-white py-sm-5">
+   <div className="overflow-hidden">
+   <div className="container my-5 bg-white py-sm-5">
         <div className="row py-5">
           <div className="col-12 col-md-12 col-lg-7 overflow-hidden">
-            <div style={{ width: "82%" }} className="test-shine " data-aos="fade-right" data-aos-duration="1800" data-aos-once="true">
+            <div style={{ width: "82%" }} className="test-shine h-100" data-aos="fade-right" data-aos-duration="1800" data-aos-once="true">
               <img
-                src={require("../Assets/Image/2023-03-smart-grocery-savings-blog.jpeg")}
+                src={"https://img.freepik.com/free-photo/group-businesspeople-discussing-project-laptop_23-2148073311.jpg?t=st=1729859081~exp=1729862681~hmac=f34639d97e1e785f40608dceb807c916a689cd41e8421045e07dd61d987e67aa&w=900"}
                 alt=""
                 className="img-fluid w-100 h-100 object-fit-cover"
               />
@@ -44,7 +49,7 @@ function Aboutus() {
 
             <div className="p-0 bg-white aboutslide_sec overflow-hidden">
               <div className="aboutslider  ms-auto  m-0  overflow-hidden" data-aos="fade-left" data-aos-duration="1800" data-aos-once="true">
-                <Slider {...settings} className="p-0 m-0  overflow-hidden border border-5 border-white">
+                <Slider {...settings} className="p-0 m-0  overflow-hidden border border-5 border-white test-shine">
                   {aboutimage?.map((x, i) => {
                     console.log(x);
                     return (
@@ -63,7 +68,8 @@ function Aboutus() {
             <div className="h-100 ">
          <div className="tittle"><TittlesAll tittle="ABOUT US " /></div>
                
-                <div className="sectittle">Lorem ipsum dolor sit amet.</div>
+                <div className="sectittle"       data-aos="fade-down"
+                data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit amet.</div>
               <div className="pera py-3">
                 Our organization is proficient in manufacturing and supplying a
                 premium quality range of Commercial Kitchen Equipment. The
@@ -134,6 +140,7 @@ function Aboutus() {
           </div>
         </div>
       </div>
+   </div>
     </>
   );
 }

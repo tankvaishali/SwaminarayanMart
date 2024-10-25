@@ -5,7 +5,8 @@
     font-weight: 600;
 }
 .footerbg{
-    background-image: url("../Image//footer\ image.png");
+    /* background-image: url("../Image//footer\ image.png"); */
+    background-image: url("../Image//product_bg.jpg");
     background-color: var(--darkgreen--);
     background-position: center;
     background-repeat: no-repeat;

@@ -77,7 +77,8 @@ function Product() {
 
   return (
     <>
-      <div className="product_high " style={{marginBottom:"200px"}}>
+   <div className="overflow-hidden">
+   <div className="product_high " style={{marginBottom:"200px"}}>
         <div className="container pt-5">
           <div className="row pt-5 ">
             <div className="col-12  col-lg-9 overflow-hidden">
@@ -95,6 +96,7 @@ function Product() {
                 className="sectittle text-white"
                 data-aos="fade-down"
                 data-aos-duration="1500"
+                data-aos-once="true"
               >
                 Our Popular products
               </div>
@@ -166,6 +168,7 @@ function Product() {
           </div>
         </div>
           </div>
+   </div>
     
     </>
   );

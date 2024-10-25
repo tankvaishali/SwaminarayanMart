@@ -4,27 +4,72 @@
   --lightgray--: rgb(161, 161, 161);
   --white--: white;
 }
-.gray{
+.gray {
   color: var(--lightgray--);
 }
-.pera{
+.pera {
   font-size: 14px;
 }
-.tittle{
+.tittle {
   font-size: 35px;
-  background: linear-gradient(to right, #49ca70, #FF7E00,#ff8000,#9c4e00); 
-  -webkit-text-fill-color: transparent; 
-  -webkit-background-clip: text; 
+  background: linear-gradient(to right, #49ca70, #ff7e00, #ff8000, #9c4e00);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   font-weight: 700;
   text-shadow: 8px 9px 10px #3d47484a;
 }
-.sectittle{
+.sectittle {
   font-size: 30px;
   font-weight: 600;
   color: var(--darkgreen--);
   margin-top: -20px;
-
 }
+
+/* image shine start */
+
+.test-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.test-shine img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.test-shine:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 12%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* Hover state - trigger effect */
+.test-shine:hover:after {
+  opacity: 1;
+  left: 200%;
+  /* transition: left 0.9s ease, top 0.9s ease, opacity 0.15s ease; */
+  transition: left 1s linear, opacity 0.15s ease;
+}
+
+.test-shine:active:after {
+  opacity: 0;
+}
+
+/* image shine end */
 /* Header start */
 
 .bg_color {
@@ -100,3 +145,4 @@
 }
 
 /* Header end */
+
