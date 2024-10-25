@@ -10,7 +10,21 @@
 .pera{
   font-size: 14px;
 }
+.tittle{
+  font-size: 35px;
+  background: linear-gradient(to right, #49ca70, #FF7E00,#ff8000,#9c4e00); 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  font-weight: 700;
+  text-shadow: 8px 9px 10px #3d47484a;
+}
+.sectittle{
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--darkgreen--);
+  margin-top: -20px;
 
+}
 /* Header start */
 
 .bg_color {
