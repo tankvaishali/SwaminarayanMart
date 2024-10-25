@@ -35,7 +35,7 @@ function Aboutus() {
   ]
   return (
     <>
-   <div className="overflow-hidden">
+   <div className="overflow-hidden" id='Aboutus'>
    <div className="container my-5 bg-white py-sm-5">
         <div className="row py-5">
           <div className="col-12 col-md-12 col-lg-7 overflow-hidden">

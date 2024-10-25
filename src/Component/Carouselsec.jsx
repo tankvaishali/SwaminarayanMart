@@ -25,7 +25,7 @@ function Carouselsec() {
      }, [initialLoad]);
   return (
     <>
-      <div className="carousel" style={{marginTop:"-100px"}}>
+      <div className="carousel" id='sliders' style={{marginTop:"-100px"}}>
         {Array.from({ length: totalSlides }, (_, index) => (
           <div
             key={index}

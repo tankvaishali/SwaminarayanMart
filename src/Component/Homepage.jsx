@@ -28,32 +28,32 @@ function Homepage() {
         <div class="marquee" style={{ backdropFilter: 'blur(10px)' }}>
           <div class="marquee-content">
             <div className='font_stroke me-1'>
-              Swaminarayan Mart
+              Swaminarayan Mega Mart
             </div>
           </div>
           <div class="marquee-content">
             <div className='font_stroke ms-4'>
-              Swaminarayan Mart
+            Swaminarayan Mega Mart
             </div>
           </div>
           <div class="marquee-content">
             <div className='font_stroke ms-4'>
-              Swaminarayan Mart
+              Swaminarayan Mega Mart
             </div>
           </div>
           <div class="marquee-content">
             <div className='font_stroke ms-4'>
-              Swaminarayan Mart
+              Swaminarayan Mega Mart
             </div>
           </div>
           <div class="marquee-content">
             <div className='font_stroke ms-4'>
-              Swaminarayan Mart
+              Swaminarayan Mega Mart
             </div>
           </div>
           <div class="marquee-content">
             <div className='font_stroke ms-4'>
-              Swaminarayan Mart
+              Swaminarayan Mega Mart
             </div>
           </div>
         </div>
