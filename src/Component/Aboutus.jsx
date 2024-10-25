@@ -71,14 +71,7 @@ function Aboutus() {
                 <div className="sectittle"       data-aos="fade-down"
                 data-aos-duration="1500" data-aos-once="true">We Provide Bringing You Essentials  Everyday</div>
               <div className="pera py-3">
-                Our organization is proficient in manufacturing and supplying a
-                premium quality range of Commercial Kitchen Equipment. The
-                varied range of kitchen equipment offered by us is manufactured
-                using graded steel and certified components, and is known for
-                reliable performance, easy operations, longer functional life
-                and energy efficiency. We can make these equipments available in
-                different capacities and sizes, as per the specifications of
-                clients.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil consequatur ducimus nostrum sequi neque iure possimus delectus, eveniet ipsum exercitationem repellat eum quia ullam earum facere ipsa! Vitae vero odit cupiditate sunt sed qui magni at voluptates laboriosam eius. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, alias sed id eveniet porro fugiat dolore aut cupiditate nulla quisquam provident, delectus quis voluptas exercitationem possimus optio excepturi, atque rem.
               </div>
               <div className="row g-3 p-0 m-0">
                 <div className="col-12 col-md-4 text-center pt-3 overflow-hidden">
@@ -88,7 +81,7 @@ function Aboutus() {
                       style={{ width: "80px", height: "80px" }}
                     >
                       <img
-                        src={require("../Assets/Image/footer image.png")}
+                        src={"https://jr-equipment.vercel.app/static/media/vector-golden-balance-law-scales-with-flat-illustration-style_954135-1168-removebg-preview.1ecdee875221527268f6.png"}
                         alt=""
                         className="img-fluid w-100 h-100 shadow_image"
                       />
@@ -108,7 +101,7 @@ function Aboutus() {
                       style={{ width: "80px", height: "80px" }}
                     >
                       <img
-                        src={require("../Assets/Image/full-length-portrait-cheery-couple_171337-2247.jpg")}
+                        src={"https://jr-equipment.vercel.app/static/media/charity-vector-illustration-style_717774-11817-removebg-preview.fc785973e803ebd275c4.png"}
                         alt=""
                         className="img-fluid w-100 h-100 shadow_image"
                       />
@@ -126,7 +119,7 @@ function Aboutus() {
                       style={{ width: "80px", height: "80px" }}
                     >
                       <img
-                        src={require("../Assets/Image/profile picture 1.jpg")}
+                        src={"https://jr-equipment.vercel.app/static/media/verified-logistic-vector-icon-design-illustration_1174953-23790-removebg-preview.e37a3898269053369e38.png"}
                         alt=""
                         className="img-fluid w-100 h-100 shadow_image"
                       />

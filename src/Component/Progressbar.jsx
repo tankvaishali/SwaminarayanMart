@@ -4,10 +4,10 @@ import video from "../Assets/video/progress.mp4"; // Correct import
 function Progressbar() {
   const progressBars = [
     { label: "Happy Customers", percentage: 98 },
-    { label: "Megawatts Created", percentage: 75 },
-    { label: "Carbon print reduced", percentage: 85 },
-    { label: "CO2 emissions reduced", percentage: 90 },
-    { label: "Security Advices", percentage: 80 },
+    { label: "Mega Savings", percentage: 75 },
+    { label: "Product quality", percentage: 90 },
+    { label: "Team work", percentage: 95 },
+    { label: "Security ", percentage: 94 },
   ];
 
   const progressRefs = useRef([]);
