@@ -39,7 +39,7 @@ function Counter() {
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, veritatis. Veniam nostrum, dolorem adipisci repudiandae suscipit doloremque sequi perferendis quos ex tenetur nisi quia autem, facilis ipsum? Voluptas, quam laborum!
                             </p>
                             {/* Button to open modal */}
-                            <button className='button-86 mx-auto fw-bold fs-5' role="button" onClick={handleOpenModal}>
+                            <button className='button-86 mx-auto fw-bold fs-6' role="button" onClick={handleOpenModal}>
                                 Contact Us
                             </button>
                         </div>
@@ -49,11 +49,11 @@ function Counter() {
 
             {/* Modal */}
             {showModal && (
-                <div className={`modal fade overflow-y-hidden ${showModal ? 'show' : ''}`} style={{ display: 'block' }} tabIndex="-1">
-                    <div className="modal-dialog">
+                <div className={`modal fade ${showModal ? 'show' : ''}`} style={{ display: 'block' }} tabIndex="-1">
+                    <div className="modal-dialog modal-dialog-scrollable">
                         <div className="modal-content">
 
-                            <div className="modal-body" style={{ overflowY: "auto" }}>
+                            <div className="modal-body" >
                                 <div className="container p-4" style={{ backgroundColor: "#e9f7ef", borderRadius: "0px", boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)" }}>
                                     <button type="button" className="btn-close text-center" onClick={handleCloseModal}></button>
                                     <h3 className="mb-4 text-center" style={{ color: "#28a745" }}>Contact Us </h3>
