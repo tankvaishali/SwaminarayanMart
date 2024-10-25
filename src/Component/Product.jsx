@@ -77,44 +77,44 @@ function Product() {
 
   return (
     <>
-   <div className="overflow-hidden" id="productlist">
-   <div className="product_high " style={{marginBottom:"200px"}}>
-        <div className="container pt-5">
-          <div className="row pt-5 ">
-            <div className="col-12  col-lg-9 overflow-hidden">
-              {/* <div
+      <div className="overflow-hidden" id="product">
+        <div className="product_high " style={{ marginBottom: "200px" }}>
+          <div className="container pt-5">
+            <div className="row pt-5 ">
+              <div className="col-12  col-lg-9 overflow-hidden">
+                {/* <div
                 className="tittle"
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
                 Products
               </div> */}
-             <div className="tittle">
-             <TittlesAll tittle="Products"/>
-             </div>
-              <div
-                className="sectittle text-white"
-                data-aos="fade-down"
-                data-aos-duration="1500"
-                data-aos-once="true"
-              >
-                Our Popular products
+                <div className="tittle">
+                  <TittlesAll tittle="Products" />
+                </div>
+                <div
+                  className="sectittle text-white"
+                  data-aos="fade-down"
+                  data-aos-duration="1500"
+                  data-aos-once="true"
+                >
+                  Our Popular products
+                </div>
+
+
               </div>
+              <div className="col-12  col-lg-3 pera text-white"></div>
 
-        
-            </div>
-            <div className="col-12  col-lg-3 pera text-white"></div>
-
-            <div className="py-5 px-0" style={{ marginBottom: "-200px" }}>
-              <Slider
-                {...settings}
-                className="p-0 m-0 text-white header_slickslider pt-3 pt-lg-5"
-              >
-                {ProductItemlist.map((product, i) => {
-                  return (
-                    <>
-                      {/* {/ <Link key={i} to={"/"}> /} */}
-                      {/* <div class="container_sec" key={i}>
+              <div className="py-5 px-0" style={{ marginBottom: "-200px" }}>
+                <Slider
+                  {...settings}
+                  className="p-0 m-0 text-white header_slickslider pt-3 pt-lg-5"
+                >
+                  {ProductItemlist.map((product, i) => {
+                    return (
+                      <>
+                        {/* {/ <Link key={i} to={"/"}> /} */}
+                        {/* <div class="container_sec" key={i}>
                         <img
                           src={x.img}
                           alt="Avatar"
@@ -138,38 +138,38 @@ function Product() {
                         </div>
                       </div> */}
                         <div className="container_sec product-grid">
-                            <div className="product-image h-100 shadow">
-                                {/* {/ <a href="#" className="image"> /} */}
-                                    <img className="pic-1 h-100 object-fit-cover" src={product.image1} alt={product.tittle} />
-                                    <img className="pic-2 h-100 object-fit-cover" src={product.image2} alt={product.tittle} />
-                                {/* {/ </a> /} */}
-                                <div className="overlay_sec">
-                                    <div className="text h-100 px-2 d-flex flex-column justify-content-between">
-                                        <div className="icon_color">
-                                            <TbCircleArrowUpRight
-                                                className="text-white rounded-circle"
-                                                style={{ backgroundColor: "var(--darkgreen--)" }}
-                                            />
-                                        </div>
-                                        <div className="p-2">
-                                            <div className="fw-bold">{product.name}</div>
-                                            <div className="fw-bold fs-2">{product.tittle}</div>
-                                        </div>
-                                    </div>
+                          <div className="product-image h-100 shadow">
+                            {/* {/ <a href="#" className="image"> /} */}
+                            <img className="pic-1 h-100 object-fit-cover" src={product.image1} alt={product.tittle} />
+                            <img className="pic-2 h-100 object-fit-cover" src={product.image2} alt={product.tittle} />
+                            {/* {/ </a> /} */}
+                            <div className="overlay_sec">
+                              <div className="text h-100 px-2 d-flex flex-column justify-content-between">
+                                <div className="icon_color">
+                                  <TbCircleArrowUpRight
+                                    className="text-white rounded-circle"
+                                    style={{ backgroundColor: "var(--darkgreen--)" }}
+                                  />
                                 </div>
+                                <div className="p-2">
+                                  <div className="fw-bold">{product.name}</div>
+                                  <div className="fw-bold fs-2">{product.tittle}</div>
+                                </div>
+                              </div>
                             </div>
+                          </div>
                         </div>
-                      {/* {/ </Link> /} */}
-                    </>
-                  );
-                })}
-              </Slider>
+                        {/* {/ </Link> /} */}
+                      </>
+                    );
+                  })}
+                </Slider>
+              </div>
             </div>
           </div>
         </div>
-          </div>
-   </div>
-    
+      </div>
+
     </>
   );
 }

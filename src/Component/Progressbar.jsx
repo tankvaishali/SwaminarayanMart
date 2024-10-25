@@ -45,7 +45,7 @@ function Progressbar() {
 
   return (
     <>
-      <div className="mb-0 mb-lg-5 overflow-hidden" id="progessdata">
+      <div className="mb-0 mb-lg-5 overflow-hidden" id="service">
         <div className="container mt-5">
           <div className="row">
             <div
@@ -56,16 +56,16 @@ function Progressbar() {
             >
               <div className="h-100 allimg ">
                 <div className="test-shine ">
-               <div className="</div>" style={{height:450}}>
-               <video
-                  src={video} // Path to the video
-                  className="img-fluid w-100 h-100 object-fit-cover "
-                  autoPlay
-                  loop
-                  muted
-                ></video>
-               </div>
-               </div>
+                  <div className="</div>" style={{ height: 450 }}>
+                    <video
+                      src={video} // Path to the video
+                      className="img-fluid w-100 h-100 object-fit-cover "
+                      autoPlay
+                      loop
+                      muted
+                    ></video>
+                  </div>
+                </div>
               </div>
             </div>
 

@@ -46,7 +46,7 @@ function Testimonial() {
 
     return (
         <>
-            <div className='testimonial overflow-hidden my-3' id='testimonialdata'>
+            <div className='testimonial overflow-hidden my-3' id='testimonial'>
                 <div className="container">
                     <div className="row align-items-center mt-0 mt-lg-5 pt-0 pt-lg-4"   data-aos-duration="1800"
                                                 data-aos="zoom-in"

@@ -18,7 +18,7 @@ function Header() {
         <div className="container ">
           <div className="rounded-pill  ">
             {" "}
-            <Link
+            <a
               to={"/"}
               className="nav-link  fw-bold h-100 d-flex align-content-center align-items-center"
             >
@@ -27,7 +27,7 @@ function Header() {
                 alt=""
                 className="img-fluid logoset "
               />
-            </Link>
+            </a>
           </div>
 
           <button
@@ -37,7 +37,6 @@ function Header() {
             data-bs-target="#offcanvasWithBothOptions"
             aria-controls="offcanvasWithBothOptions"
           >
-            {" "}
             <span className="navbar-toggler-icon fs-5 shadow"></span>
           </button>
 
@@ -45,66 +44,92 @@ function Header() {
             <ul className="navbar-nav mx-auto">
               <li className="nav-item m-1">
                 <div class="sec h-100 mx-2  text-center">
-                  <NavLink
-                    to={"/"}
+                  <a
+                    href="/#"
                     className="nav-link headmenu maincolor fw-medium p-2 py-3 text-center"
                     aria-current="page"
                     activeClassName="active"
                   >
                     Home
-                  </NavLink>
-                </div>
-              </li>
-              <li className="nav-item m-1">
-                <div class="sec h-100 mx-2 text-center">
-                  <NavLink
-                    to={"/aboutus"}
-                    className="nav-link headmenu maincolor fw-medium p-2 py-3 text-center"
-                    aria-current="page"
-                    activeClassName="active"
-                  >
-                    About Us
-                  </NavLink>
+                  </a>
                 </div>
               </li>
 
               <li className="nav-item m-1">
                 <div class="sec h-100 mx-2 text-center">
-                  <NavLink
-                    to={"/product"}
+                  <a
+                    href="/#product"
                     className="nav-link headmenu maincolor fw-medium p-2 py-3 text-center"
                     aria-current="page"
                     activeClassName="active"
                   >
-                    projects
-                  </NavLink>
+                    Products
+                  </a>
                 </div>
               </li>
+
               <li className="nav-item m-1">
                 <div class="sec h-100 mx-2 text-center">
-                  <NavLink
-                    to={"/service"}
+                  <a
+                    href="/#aboutus"
+                    className="nav-link headmenu maincolor fw-medium p-2 py-3 text-center"
+                    aria-current="page"
+                    activeClassName="active"
+                  >
+                    About Us
+                  </a>
+                </div>
+              </li>
+
+              <li className="nav-item m-1">
+                <div class="sec h-100 mx-2 text-center">
+                  <a
+                    href="/#whyus"
                     className="nav-link headmenu maincolor fw-medium  p-2 py-3 text-center"
                     aria-current="page"
                     activeClassName="active"
                   >
-                    Services
-                  </NavLink>
+                    Why Us
+                  </a>
                 </div>
               </li>
-  
-          
-             
+
               <li className="nav-item m-1">
                 <div class="sec h-100 mx-2 text-center">
-                  <NavLink
-                    to={"/contactus"}
+                  <a
+                    href="/#service"
+                    className="nav-link headmenu maincolor fw-medium  p-2 py-3 text-center"
+                    aria-current="page"
+                    activeClassName="active"
+                  >
+                    Service
+                  </a>
+                </div>
+              </li>
+
+              <li className="nav-item m-1">
+                <div class="sec h-100 mx-2 text-center">
+                  <a
+                    href="/#testimonial"
+                    className="nav-link headmenu maincolor fw-medium  p-2 py-3 text-center"
+                    aria-current="page"
+                    activeClassName="active"
+                  >
+                    Testimonial
+                  </a>
+                </div>
+              </li>
+
+              <li className="nav-item m-1">
+                <div class="sec h-100 mx-2 text-center">
+                  <a
+                    href="/#contactus"
                     className="nav-link headmenu maincolor fw-medium p-2 py-3 text-center"
                     aria-current="page"
                     activeClassName="active"
                   >
                     Contact Us
-                  </NavLink>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -116,17 +141,13 @@ function Header() {
                 style={{ width: "120px", height: "55px" }}
                 className=" d-flex align-content-center align-items-center px-2 bg-white rounded-pill shadow"
               >
-                {/* <Controls
-                  visible={true}
-                  buttons={["play", "repeat", "frame", "debug"]}
-                /> */}
               </Player>
             </div>
           </div>
         </div>
       </nav>
       <div
-        className="offcanvas offcanvas-start overflow-hidden "
+        className="offcanvas offcanvas-start overflow-hidden"
         data-bs-scroll="true"
         data-bs-backdrop="false"
         tabindex="-1"
@@ -134,28 +155,18 @@ function Header() {
         aria-labelledby="offcanvasWithBothOptionsLabel"
       >
         <div className="offcanvas-header ">
-          <Link
-            to={"/"}
+          <a
+            href={"/#"}
             classNameName="nav-link headmenu maincolor fw-medium pe-2"
           >
-            {/* <img
-              src={require("../Assets/Images/solarbenifits.jpg")}
-              alt=""
-              className="img-fluid object-fit-cover"
-              style={{ width: "130px", height: "65px" }}
-            /> */}
             <Player
               autoplay
               loop
-              src="https://lottie.host/5a21c1f1-0cd5-486f-b4c2-c94269291c89/bIlcVBDrbv.json"
+              src="https://lottie.host/4aee6d9c-3832-4b21-931d-1b756a777137/U3BQk9gnAf.json"
               style={{ height: "100px", width: "100px" }}
             >
-              {/* <Controls
-                  visible={true}
-                  buttons={["play", "repeat", "frame", "debug"]}
-                /> */}
             </Player>
-          </Link>
+          </a>
           <button
             type="button"
             className="btn-close p-3 capbg_color rounded-circle"
@@ -163,9 +174,9 @@ function Header() {
             aria-label="Close"
           ></button>
         </div>
-        <div className="offcanvas-body px-3 overflow-x-hidden ofcv_header ">
-          <NavLink
-            to={"/"}
+        <div className="offcanvas-body px-3 overflow-x-hidden ofcv_header offnav ">
+          <a
+            href="/#"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
             aria-cu2rent="page"
             activeClassName="active"
@@ -174,10 +185,19 @@ function Header() {
               <FaHome />
             </span>{" "}
             Home
-          </NavLink>
-
-          <NavLink
-            to={"/aboutus"}
+          </a>
+          <a
+            href="/#product"
+            className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
+            activeClassName="active"
+          >
+            <span className="fs-2 pe-2">
+              <FaSolarPanel />
+            </span>{" "}
+            Product
+          </a>
+          <a
+            href="/#aboutus"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
             activeClassName="active"
           >
@@ -185,50 +205,41 @@ function Header() {
               <IoPersonCircle />
             </span>{" "}
             About Us
-          </NavLink>
+          </a>
 
-          <NavLink
-            to={"/product"}
-            className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
-            activeClassName="active"
-          >
-            <span className="fs-2 pe-2">
-              <FaSolarPanel />
-            </span>{" "}
-            Projects
-          </NavLink>
-          <NavLink
-            to={"/service"}
+
+          <a
+            href="/#whyus"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
             activeClassName="active"
           >
             <span className="fs-2 pe-2">
               <GrServices />
             </span>{" "}
-            Services
-          </NavLink>
-          <NavLink
-            to={"/career"}
+            Why Us
+          </a>
+          <a
+            href="/#service"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
             activeClassName="active"
           >
             <span className="fs-2 pe-2">
               <BsGraphUpArrow />
             </span>{" "}
-            career
-          </NavLink>
-          <NavLink
-            to={"/profile"}
+            service
+          </a>
+          <a
+            href="/#testimonial"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
             activeClassName="active"
           >
             <span className="fs-2 pe-2">
               <CgProfile />
             </span>{" "}
-            profile
-          </NavLink>
-          <NavLink
-            to={"/contactus"}
+            Testimonial
+          </a>
+          <a
+            href="/#contactus"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
             activeClassName="active"
           >
@@ -236,7 +247,7 @@ function Header() {
               <MdWifiCalling3 />
             </span>{" "}
             Contact Us
-          </NavLink>
+          </a>
         </div>
       </div>
     </>

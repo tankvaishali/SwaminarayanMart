@@ -8,7 +8,7 @@ function Counter() {
     const handleCloseModal = () => setShowModal(false);
 
     return (
-        <div id='contactusdetail'>
+        <div id='contactus'>
             {/* Video Section */}
             <div className="mainvideo my-5 overflow-hidden"
                 style={{
