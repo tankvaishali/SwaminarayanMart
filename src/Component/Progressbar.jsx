@@ -5,9 +5,9 @@ function Progressbar() {
   const progressBars = [
     { label: "Happy Customers", percentage: 98 },
     { label: "Mega Savings", percentage: 75 },
-    { label: "Product quality", percentage: 90 },
+    { label: "Product quality", percentage: 99 },
     { label: "Team work", percentage: 95 },
-    { label: "Security ", percentage: 94 },
+    { label: "Security ", percentage: 100 },
   ];
 
   const progressRefs = useRef([]);

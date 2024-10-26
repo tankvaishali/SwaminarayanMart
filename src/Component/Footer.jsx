@@ -4,6 +4,8 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapLocationDot, FaTwitter } f
 import { FaMailBulk } from 'react-icons/fa'
 import { MdWifiCalling3 } from 'react-icons/md'
 import { Link } from 'react-router-dom'
+import { BsMailbox } from 'react-icons/bs'
+import { CgMail } from 'react-icons/cg'
 
 function Footer() {
   return (
@@ -108,6 +110,11 @@ function Footer() {
                       to={'https://www.instagram.com/swaminarayanmegamart?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='}
                       className="footericon text-center p-2  mx-1 d-flex text-decoration-none text-white instaicon">
                       <FaInstagram />
+                    </Link>
+                    <Link
+                      to={'mailto:swaminarayanmegamarts@gmail.com'}
+                      className="footericon text-center p-2  mx-1 d-flex text-decoration-none text-white twittericon">
+                      <CgMail />
                     </Link>
                   </div>
                 </div>
