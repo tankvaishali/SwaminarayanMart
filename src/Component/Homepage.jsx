@@ -33,7 +33,7 @@ function Homepage() {
           </div>
           <div class="marquee-content">
             <div className='font_stroke ms-4'>
-            Swaminarayan Mega Mart
+              Swaminarayan Mega Mart
             </div>
           </div>
           <div class="marquee-content">

@@ -20,27 +20,33 @@ function Footer() {
                 <div className='py-1 text-white'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. In, natus?
                 </div>
-                <div className='py-1 d-flex hovergray'>
 
+
+                <div className='py-1 d-flex hovergray'>
                   <div className='fs-4'><FaMapLocationDot />
                   </div>
-                  <div className='ps-2 pt-2'>Lorem ipsum dolor sit amet.</div>
+                  <div className='ps-2 pt-2'>Radha Krishna Campus, Yogi Chowk ,Near Pushkar Heights ,Surat, Surat, Gujarat, 395006</div>
+                </div>
 
-                </div>
-                <div className='py-1 d-flex hovergray'>
-                  <div className='fs-4'><FaMailBulk />
+                <a href="mailto:swaminarayanmegamarts@gmail.com" target='_blank' className='text-decoration-none hovergray'>
+                  <div className='py-1 d-flex hovergray'>
+                    <div className='fs-4'><FaMailBulk />
+                    </div>
+                    <div className='ps-2 mt-2 '>
+                      <div>swaminarayanmegamarts@gmail.com</div>
+                    </div>
                   </div>
-                  <div className='ps-2 '>
-                    <div>abc@gmail.com</div>
+                </a>
+
+                <a href="tel:74340 34244" className='text-decoration-none hovergray'>
+                  <div className='py-1 d-flex hovergray'>
+                    <div className='fs-4'><MdWifiCalling3 />
+                    </div>
+                    <div className='ps-2 mt-2'>
+                      <div>+91 74340 34244</div>
+                    </div>
                   </div>
-                </div>
-                <div className='py-1 d-flex hovergray'>
-                  <div className='fs-4'><MdWifiCalling3 />
-                  </div>
-                  <div className='ps-2 '>
-                    <div>+(91) 12345 676890</div>
-                  </div>
-                </div>
+                </a>
               </div>
               {/* <div className="col-12 col-md-6 col-lg-3 ps-lg-5 ps-3">
                 <div className='footertittle'>
@@ -90,33 +96,18 @@ function Footer() {
                   <div className="d-flex flex-wrap fs-4 mt-4">
                     <Link
                       to={
-                        "https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fwww.jrequipments.com%252F&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB"
+                        "https://www.facebook.com/profile.php?id=61556442616211&mibextid=ZbWKwL"
                       }
                       target="_blank"
                       className="footericon text-center p-2 mx-1  ms-0 d-flex text-decoration-none text-white facebookicon"
                     >
                       <FaFacebookF />
                     </Link>
+
                     <Link
-                      to={
-                        "https://x.com/intent/post?url=https%3A%2F%2Fwww.jrequipments.com%2F&text=J.R.Equipment"
-                      }
-                      target="_blank"
-                      className="footericon text-center p-2  mx-1 d-flex text-decoration-none text-white twittericon"
-                    >
-                      <FaTwitter />
-                    </Link>
-                    <Link className="footericon text-center p-2  mx-1 d-flex text-decoration-none text-white instaicon">
+                      to={'https://www.instagram.com/swaminarayanmegamart?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='}
+                      className="footericon text-center p-2  mx-1 d-flex text-decoration-none text-white instaicon">
                       <FaInstagram />
-                    </Link>
-                    <Link
-                      to={
-                        "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Furl%3Dhttps%3A%2F%2Fwww.jrequipments.com%2F"
-                      }
-                      target="_blank"
-                      className="footericon text-center p-2  mx-1 d-flex text-decoration-none text-white linkicon"
-                    >
-                      <FaLinkedinIn />
                     </Link>
                   </div>
                 </div>
@@ -125,7 +116,7 @@ function Footer() {
           </div>
 
         </div>
-      </div>
+      </div >
     </>
   )
 }
