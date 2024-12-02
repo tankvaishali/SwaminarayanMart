@@ -10,7 +10,7 @@ function Counter() {
     return (
         <div id='contactus'>
             {/* Video Section */}
-            <div className="mainvideo my-5 overflow-hidden"
+            <div className="mainvideo my-5 mt-0  overflow-hidden"
                 style={{
                     boxShadow: "inset 0 0 1200px 1200px rgba(0, 0, 0, 0.5)",
                     height: "450px",

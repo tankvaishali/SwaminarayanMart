@@ -4,7 +4,22 @@
   --lightgray--: rgb(161, 161, 161);
   --white--: white;
 }
+::-webkit-scrollbar {
+  width: 14px;
+}
 
+::-webkit-scrollbar-track {
+  /* background-color: #f1f1f1; */
+  box-shadow: inset 3px 3px 10px 10px rgba(196, 196, 196, 0.308);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--darkgreen--);
+}
+::selection {
+  background-color: var(--darkgreen--); 
+  color: white; 
+}
 .gray {
   color: var(--lightgray--);
 }
