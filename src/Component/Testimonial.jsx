@@ -32,7 +32,7 @@ function Testimonial() {
     ];
 
     // Custom arrow components
-  
+
     const settings = {
         dots: false,
         infinite: true,
@@ -41,21 +41,20 @@ function Testimonial() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-       arrows:false,
+        arrows: false,
     };
 
     return (
         <>
             <div className='testimonial overflow-hidden my-3' id='testimonial'>
                 <div className="container">
-                    <div className="row align-items-center mt-0 mt-lg-5 pt-0 pt-lg-4"   data-aos-duration="1800"
-                                                data-aos="zoom-in"
-                                                data-aos-once="true">
+                    <div className="row align-items-center mt-0 mt-lg-5 pt-0 pt-lg-4" data-aos-duration="1800"
+                        data-aos="zoom-in"
+                        data-aos-once="true">
                         <div className='col-lg-1 d-none d-lg-block m-0 p-0 mt-1 '>
-                            {/* <h2 className='testimonial-title ms-auto m-0'>Testimonial</h2> */}
-                       <div className=' testimonial-title ms-auto '>
-                       <TittlesAll tittle="TESTIMONIAL"/>
-                       </div>
+                            <div className=' testimonial-title ms-auto '>
+                                <TittlesAll tittle="TESTIMONIAL" />
+                            </div>
                         </div>
                         <div className='col-lg-11 m-0 p-0'>
                             <Slider {...settings}>
@@ -64,7 +63,7 @@ function Testimonial() {
                                         <div className='row g-4 p-4'>
                                             <div className='col-12 col-md-5 col-lg-3'>
                                                 <div className='test-shine h-100'>
-                                                <img src={testimonial.image} className='w-100 h-100 object-fit-cover rounded-5' alt="Testimonial " />
+                                                    <img src={testimonial.image} className='w-100 h-100 object-fit-cover rounded-5' alt="Testimonial " />
                                                 </div>
                                             </div>
                                             <div className='col-12 col-md-7 col-lg-9'>

@@ -3,17 +3,17 @@ import Header from './Header'
 import Footer from './Footer'
 
 function HOC(Component) {
-    function NewComponent(){
-        return(
+    function NewComponent() {
+        return (
             <>
-<Header/>
-            <Component/>
-            <Footer/>
+                <Header />
+                <Component />
+                <Footer />
             </>
         )
     }
-  return NewComponent
-  
+    return NewComponent
+
 }
 
 export default HOC

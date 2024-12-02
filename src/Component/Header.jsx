@@ -1,15 +1,13 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import { FaHome, FaSolarPanel } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import { IoPersonCircle } from "react-icons/io5";
-import { GrServices } from "react-icons/gr";
 import { MdOutlineSettings, MdWifiCalling3 } from "react-icons/md";
-import { CgProfile } from "react-icons/cg";
 import { Player } from "@lottiefiles/react-lottie-player";
-import { BsGraphUpArrow } from "react-icons/bs";
 import { TiShoppingCart } from "react-icons/ti";
+import { HiOutlineBars3 } from "react-icons/hi2";
 
 function Header() {
+   
   return (
     <>
       <nav
@@ -38,7 +36,7 @@ function Header() {
             data-bs-target="#offcanvasWithBothOptions"
             aria-controls="offcanvasWithBothOptions"
           >
-            <span className="navbar-toggler-icon fs-5 shadow"></span>
+            <span className="navbar-toggler-icon fs-5 shadow"><HiOutlineBars3 className="text-light fs-1" /></span>
           </button>
 
           <div className="collapse navbar-collapse lg_header" id="navbarNav">
@@ -81,9 +79,6 @@ function Header() {
                   </a>
                 </div>
               </li>
-
-             
-
               <li className="nav-item m-1">
                 <div class="sec h-100 mx-2 text-center">
                   <a
@@ -97,7 +92,7 @@ function Header() {
                 </div>
               </li>
 
-              
+
 
               <li className="nav-item m-1">
                 <div class="sec h-100 mx-2 text-center">
@@ -133,7 +128,7 @@ function Header() {
         id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel"
       >
-        <div className="offcanvas-header ">
+        <div className="offcanvas-header">
           <a
             href={"/#"}
             classNameName="nav-link headmenu maincolor fw-medium pe-2"
@@ -182,13 +177,10 @@ function Header() {
           >
             <span className="fs-2 pe-2">
               <TiShoppingCart />
-            </span>{" "}
+            </span>
             Product
           </a>
-   
 
-
-    
           <a
             href="/#service"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
@@ -199,7 +191,7 @@ function Header() {
             </span>{" "}
             service
           </a>
-         
+
           <a
             href="/#contactus"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"

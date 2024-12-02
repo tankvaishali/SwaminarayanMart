@@ -139,7 +139,6 @@
 
 .lg_header .nav-link {
   color: white !important;
-  /* color: var(--green--) !important; */
 }
 
 .indx {
@@ -147,12 +146,14 @@
 }
 
 .navbar-toggler-icon {
-  background-color: white;
+  background-image: none;
+}
+
+.shadow {
+  box-shadow: none !important;
 }
 
 /* Header end */
-
-
 .offnav::-webkit-scrollbar {
   width: 8px;
 }

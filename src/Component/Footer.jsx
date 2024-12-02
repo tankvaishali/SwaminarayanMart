@@ -1,10 +1,9 @@
 import React from 'react'
 import "../Assets/Css/Footersec.css"
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMapLocationDot, FaTwitter } from 'react-icons/fa6'
+import { FaFacebookF, FaInstagram, FaMapLocationDot } from 'react-icons/fa6'
 import { FaMailBulk } from 'react-icons/fa'
 import { MdWifiCalling3 } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-import { BsMailbox } from 'react-icons/bs'
 import { CgMail } from 'react-icons/cg'
 
 function Footer() {

@@ -77,9 +77,6 @@
     letter-spacing: 2px;
     border-left: 10px solid white;
     top: 30%;
-    /* width: 50%; */
-    /* margin: 0 auto;
-     */
     left:30%;
     z-index: 2;
     opacity: 0;
@@ -135,23 +132,19 @@
 
 .slide1 .column {
     background-image: url("../Image/2023-03-smart-grocery-savings-blog.jpeg");
-
     box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.589);
-    /* object-fit: cover; */
+    
 }
 
 .slide2 .column {
     
     background-image: url("https://img.freepik.com/free-photo/cheerful-little-girl-sitting-shopping-cart_171337-2382.jpg?t=st=1729754119~exp=1729757719~hmac=80fb44f0c0a1b3277e5f2d107a2068e75de987eb3a08c44b58bac16b8ed1b5f2&w=900");
     box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.589);
-    /* object-fit: cover; */
-
-
+  
 }
 
 .slide3 .column {
     background-image: url("https://img.freepik.com/free-photo/happy-family-with-child-shopping-cart-buying-food_171337-2353.jpg?t=st=1729754574~exp=1729758174~hmac=7abc8336b7f792b3f6206e9e8d342c055d99e816e0b749cd7dcfbfd53d0825ee&w=900");
     box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.589);
-    /* object-fit: cover; */
-
+    
 }

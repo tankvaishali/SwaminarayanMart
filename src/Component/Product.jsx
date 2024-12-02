@@ -1,10 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
-// import "../../Assets/Css/Home.css";
-// import { Link } from "react-router-dom";
 import "../Assets/Css/Product.css"
 import { TbCircleArrowUpRight } from "react-icons/tb";
 import TittlesAll from "./TittleAll";
+import { Link } from "react-router-dom";
 
 function Product() {
   let ProductItemlist = [
@@ -74,6 +73,11 @@ function Product() {
       },
     ],
   };
+  const message = encodeURIComponent(
+    `Hi! 🌟 Exciting News! 🌟\n\nWe’ve just launched [Product Name/Offer], and it’s exactly what you need to [key benefit].\n\n✨ Special Features:\n- Feature 1\n- Feature 2\n- Feature 3\n\n💰 Price: [Insert price]\n🎉 Limited Offer: Get it now and enjoy [discount/freebie/offer details, if applicable]!\n\n📦 Delivery: Fast and secure to your doorstep!\n\nFeel free to reply if you have any questions or need assistance. 😊`
+  );
+
+  const whatsappLink = `https://wa.me/9558064415?text=${message}`;
 
   return (
     <>
@@ -82,13 +86,6 @@ function Product() {
           <div className="container pt-5">
             <div className="row pt-5 ">
               <div className="col-12  col-lg-9 overflow-hidden">
-                {/* <div
-                className="tittle"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                Products
-              </div> */}
                 <div className="tittle">
                   <TittlesAll tittle="Products" />
                 </div>
@@ -113,53 +110,28 @@ function Product() {
                   {ProductItemlist.map((product, i) => {
                     return (
                       <>
-                        {/* {/ <Link key={i} to={"/"}> /} */}
-                        {/* <div class="container_sec" key={i}>
-                        <img
-                          src={x.img}
-                          alt="Avatar"
-                          class="pro_image img-fluid h-100 object-fit-cover"
-                        />
-                        <div class="overlay_sec">
-                          <div class="text h-100 px-2 d-flex flex-column justify-content-between">
-                            <div className=" icon_color ">
-                              <TbCircleArrowUpRight
-                                className="text-white  rounded-circle"
-                                style={{
-                                  backgroundColor: "var(--darkgreen--)",
-                                }}
-                              />
-                            </div>
-                            <div className="p-2">
-                              <div className="fw-bold">{x.name}</div>
-                              <div className="fw-bold fs-2">{x.tittle}</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> */}
-                        <div className="container_sec product-grid">
-                          <div className="product-image h-100 shadow">
-                            {/* {/ <a href="#" className="image"> /} */}
-                            <img className="pic-1 h-100 object-fit-cover" src={product.image1} alt={product.tittle} />
-                            <img className="pic-2 h-100 object-fit-cover" src={product.image2} alt={product.tittle} />
-                            {/* {/ </a> /} */}
-                            <div className="overlay_sec">
-                              <div className="text h-100 px-2 d-flex flex-column justify-content-between">
-                                <div className="icon_color">
-                                  <TbCircleArrowUpRight
-                                    className="text-white rounded-circle"
-                                    style={{ backgroundColor: "var(--darkgreen--)" }}
-                                  />
-                                </div>
-                                <div className="p-2">
-                                  <div className="fw-bold">{product.name}</div>
-                                  <div className="fw-bold fs-3">{product.tittle}</div>
+                        <Link to={whatsappLink} target="_blank" rel="noopener noreferrer">
+                          <div className="container_sec product-grid">
+                            <div className="product-image h-100 shadow">
+                              <img className="pic-1 h-100 object-fit-cover" src={product.image1} alt={product.tittle} />
+                              <img className="pic-2 h-100 object-fit-cover" src={product.image2} alt={product.tittle} />
+                              <div className="overlay_sec">
+                                <div className="text h-100 px-2 d-flex flex-column justify-content-between">
+                                  <div className="icon_color">
+                                    <TbCircleArrowUpRight
+                                      className="text-white rounded-circle"
+                                      style={{ backgroundColor: "var(--darkgreen--)" }}
+                                    />
+                                  </div>
+                                  <div className="p-2">
+                                    <div className="fw-bold">{product.name}</div>
+                                    <div className="fw-bold fs-3">{product.tittle}</div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        {/* {/ </Link> /} */}
+                        </Link>
                       </>
                     );
                   })}
