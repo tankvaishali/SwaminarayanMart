@@ -7,7 +7,7 @@ import { TiShoppingCart } from "react-icons/ti";
 import { HiOutlineBars3 } from "react-icons/hi2";
 
 function Header() {
-   
+
   return (
     <>
       <nav
@@ -42,12 +42,11 @@ function Header() {
           <div className="collapse navbar-collapse lg_header" id="navbarNav">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item m-1">
-                <div class="sec h-100 mx-2  text-center">
+                <div className="sec h-100 mx-2  text-center">
                   <a
                     href="/#"
                     className="nav-link headmenu maincolor fw-medium p-2 py-3 text-center"
                     aria-current="page"
-                    activeClassName="active"
                   >
                     Home
                   </a>
@@ -55,12 +54,11 @@ function Header() {
               </li>
 
               <li className="nav-item m-1">
-                <div class="sec h-100 mx-2 text-center">
+                <div className="sec h-100 mx-2 text-center">
                   <a
                     href="/#product"
                     className="nav-link headmenu maincolor fw-medium p-2 py-3 text-center"
                     aria-current="page"
-                    activeClassName="active"
                   >
                     Products
                   </a>
@@ -68,24 +66,22 @@ function Header() {
               </li>
 
               <li className="nav-item m-1">
-                <div class="sec h-100 mx-2 text-center">
+                <div className="sec h-100 mx-2 text-center">
                   <a
                     href="/#aboutus"
                     className="nav-link headmenu maincolor fw-medium p-2 py-3 text-center"
                     aria-current="page"
-                    activeClassName="active"
                   >
                     About Us
                   </a>
                 </div>
               </li>
               <li className="nav-item m-1">
-                <div class="sec h-100 mx-2 text-center">
+                <div className="sec h-100 mx-2 text-center">
                   <a
                     href="/#service"
                     className="nav-link headmenu maincolor fw-medium  p-2 py-3 text-center"
                     aria-current="page"
-                    activeClassName="active"
                   >
                     Service
                   </a>
@@ -95,12 +91,11 @@ function Header() {
 
 
               <li className="nav-item m-1">
-                <div class="sec h-100 mx-2 text-center">
+                <div className="sec h-100 mx-2 text-center">
                   <a
                     href="/#contactus"
                     className="nav-link headmenu maincolor fw-medium p-2 py-3 text-center"
                     aria-current="page"
-                    activeClassName="active"
                   >
                     Contact Us
                   </a>
@@ -124,14 +119,14 @@ function Header() {
         className="offcanvas offcanvas-start overflow-hidden"
         data-bs-scroll="true"
         data-bs-backdrop="false"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasWithBothOptions"
         aria-labelledby="offcanvasWithBothOptionsLabel"
       >
         <div className="offcanvas-header">
           <a
             href={"/#"}
-            classNameName="nav-link headmenu maincolor fw-medium pe-2"
+            className="nav-link headmenu maincolor fw-medium pe-2"
           >
             <Player
               autoplay
@@ -152,8 +147,6 @@ function Header() {
           <a
             href="/#"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
-            aria-cu2rent="page"
-            activeClassName="active"
           >
             <span className="fs-2 pe-2">
               <FaHome />
@@ -163,7 +156,6 @@ function Header() {
           <a
             href="/#aboutus"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
-            activeClassName="active"
           >
             <span className="fs-2 pe-2">
               <IoPersonCircle />
@@ -173,7 +165,6 @@ function Header() {
           <a
             href="/#product"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
-            activeClassName="active"
           >
             <span className="fs-2 pe-2">
               <TiShoppingCart />
@@ -184,7 +175,6 @@ function Header() {
           <a
             href="/#service"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
-            activeClassName="active"
           >
             <span className="fs-2 pe-2">
               <MdOutlineSettings />
@@ -195,7 +185,6 @@ function Header() {
           <a
             href="/#contactus"
             className="nav-link  fw-medium p-3 py-2 m-1 fs-5"
-            activeClassName="active"
           >
             <span className="fs-2 pe-2">
               <MdWifiCalling3 />

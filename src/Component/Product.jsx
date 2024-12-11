@@ -4,55 +4,10 @@ import "../Assets/Css/Product.css";
 import { TbCircleArrowUpRight } from "react-icons/tb";
 import TittlesAll from "./TittleAll";
 import { Link } from "react-router-dom";
+import { ProductItemlist } from "./ProductItemlist";
 
 function Product() {
-  const ProductItemlist = [
-    {
-      id: 1,
-      image1: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
-      image2: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
-      name: "Cold Drinks",
-      tittle: "Lorem ipsum dolor sit amet",
-      price: "$100",
-      description: "A high-quality product with amazing features.",
-    },
-    {
-      id: 2,
-      image1: require("../Assets/Image/IMG-20241025-WA0006.jpg"),
-      image2: require("../Assets/Image/IMG-20241025-WA0006.jpg"),
-      name: "Stationery",
-      tittle: "Lorem ipsum dolor sit amet",
-      price: "$150",
-      description: "A premium product with advanced functionality.",
-    },
-    {
-      id: 3,
-      image1: require("../Assets/Image/107224930-1681412037532-gettyimages-1470350052-dsc05912.jpeg"),
-      image2: require("../Assets/Image/107224930-1681412037532-gettyimages-1470350052-dsc05912.jpeg"),
-      name: "Kitchen",
-      tittle: "Lorem ipsum dolor sit amet",
-      price: "$200",
-      description: "Top-notch quality for professional use.",
-    },
-    {
-      id: 4,
-      image1: require("../Assets/Image/image_2024_10_25T12_12_48_549Z.png"),
-      image2: require("../Assets/Image/image_2024_10_25T12_12_48_549Z.png"),
-      name: "Packets",
-      tittle: "Lorem ipsum dolor sit amet",
-      price: "$120",
-      description: "Affordable and reliable, perfect for daily use.",
-    },
-    {
-      id: 5,
-      image1: require("../Assets/Image/full-length-portrait-cheery-couple_171337-2247.jpg"),
-      image2: require("../Assets/Image/full-length-portrait-cheery-couple_171337-2247.jpg"),
-      name: "Cosmetic",
-      tittle: "Lorem ipsum dolor sit amet",
-      price: "$130",
-      description: "Stylish and modern design with practical features.",
-    },
-  ];
+
 
   const settings = {
     dots: false,
@@ -111,17 +66,16 @@ function Product() {
                 className="p-0 m-0 text-white header_slickslider pt-3 pt-lg-5"
               >
                 {ProductItemlist.map((product) => {
-                  const productMessage = encodeURIComponent(
-                    `Hi! 🌟 I’m interested in your product:\n\n📦 *${product.name} products * - ${product.tittle}\n💰 ✨ Can you provide more information?`
-                  );
-                  const whatsappLink = `https://wa.me/9558064415?text=${productMessage}`;
+                  // const productMessage = encodeURIComponent(
+                  //   `Hi! 🌟 I’m interested in your product:\n\n📦 *${product.name} products * - ${product.tittle}\n💰 ✨ Can you provide more information?`
+                  // );
+                  // const whatsappLink = `https://wa.me/9558064415?text=${productMessage}`;
 
                   return (
                     <Link
-                      to={whatsappLink}
-                      target="_blank"
+                      to={'/' + product.id}
                       rel="noopener noreferrer"
-                      key={product.id} 
+                      key={product.id}
                     >
                       <div className="container_sec product-grid">
                         <div className="product-image h-100 shadow">
@@ -148,7 +102,7 @@ function Product() {
                               <div className="p-2">
                                 <div className="fw-bold">{product.name}</div>
                                 <div className="fw-bold fs-3">{product.tittle}</div>
-                              
+
                               </div>
                             </div>
                           </div>
