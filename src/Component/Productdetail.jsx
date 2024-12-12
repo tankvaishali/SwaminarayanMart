@@ -1,60 +1,114 @@
+// import React from 'react';
+// import { ProductItemlist } from './ProductItemlist';
+// import Header from './Header';
+// import Footer from './Footer';
+// import { useParams } from 'react-router-dom';
+// import { FaGit, FaGithub, FaLink, FaRupeeSign } from 'react-icons/fa';
+// import { BsWhatsapp } from 'react-icons/bs';
+
+// function Productdetail() {
+
+//     const id = useParams().id;
+//     console.log(id);
+
+//     const produc = ProductItemlist.filter((x) => x.id == id);
+//     console.log(produc);
+
+//     return (
+//         <div>
+//             <Header />
+//             <div className="container px-0">
+//                 <div className="row">
+//                     {produc.map((product, idx) => (
+//                         <div className="row g-4" key={idx}>
+//                             {product.products.map((item, index) => (
+//                                 <div className="col-12 col-sm-6 col-lg-3" key={index}>
+//                                     <div className="card h-100 rounded-0 cardproduct">
+//                                         <img src={item.image3} className="card-img-top img-fluid p-3" alt={item.name} />
+//                                         <div className="card-body">
+//                                             <h5 className="card-title fs-5 text-success fw-bold text-uppercase">{item.name}</h5>
+//                                             <h6 className="card-subtitle my-2 text-muted pera text-secondary">{item.title}</h6>
+//                                             <p className="card-text mb-2 pera">{item.describ}</p>
+//                                             <div className='d-flex align-items-center'>
+//                                                 <div className='fw-bold text-muted text-decoration-line-through'>
+//                                                     <FaRupeeSign /> {item.dprice}
+//                                                 </div>
+//                                                 <div className='fw-bold ps-2'>
+//                                                     <FaRupeeSign />{item.mprice}
+//                                                 </div>
+//                                             </div>
+//                                         </div>
+//                                         <button className='btn m-0 btn-success rounded-0 w-100 mt-2 fw-medium fs-5'>
+//                                             <BsWhatsapp /> Get Now
+//                                         </button>
+//                                     </div>
+//                                 </div>
+//                             ))}
+//                         </div>
+//                     ))}
+//                 </div>
+//             </div>
+//             <Footer />
+//         </div>
+//     );
+// }
+
+// export default Productdetail;
 import React from 'react';
 import { ProductItemlist } from './ProductItemlist';
 import Header from './Header';
 import Footer from './Footer';
 import { useParams } from 'react-router-dom';
-import { FaGit, FaGithub, FaLink } from 'react-icons/fa';
+import { FaRupeeSign } from 'react-icons/fa';
+import { BsWhatsapp } from 'react-icons/bs';
 
 function Productdetail() {
 
-    const id = useParams().id
+    const id = useParams().id;
     console.log(id);
 
-
-    const produc = ProductItemlist.filter((x) => x.id == id)
+    const produc = ProductItemlist.filter((x) => x.id == id);
     console.log(produc);
 
     return (
         <div>
             <Header />
-            <div className="px-0 container">
-                <div className="row justify-content-between">
-                    {produc.map((product, idx) => {
-                        return (
-                            <div className="row align-items-center justify-content-center g-4" key={idx}>
-                                {product.products.map((item, index) => {
-                                    return (
-                                        // <div class="card col-3" >
-                                        //     <img class="card-img-top" src={item.image3} alt="Card image cap" />
-                                        //     <div class="card-body">
-                                        //         <h5 class="card-title">{item.name}</h5>
-                                        //         <p class="card-text">{item.describ}</p>
-                                        //         <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        //     </div>
-                                        // </div>
-
-                                        <div class="col-md-4">
-                                            <div class="card">
-                                                <img src={item.image3} class="card-img-top" alt="..." />
-                                                <div class="card-body">
-                                                    <h5 class="card-title">{item.name}</h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                                                    <p class="card-text">{item.describ}</p>
-                                                    <a href="#" class="btn mr-2"><FaLink /> Visit Site</a>
-                                                    <a href="#" class="btn "><FaGithub /> Github</a>
+            <div className="container  overflow-hidden">
+                <div className="row m-0 p-0 py-5 ">
+                    {produc.map((product, idx) => (
+                        <div className="row p-0 m-0 " key={idx}>
+                            {product.products.map((item, index) => (
+                                <div className="col-12 col-md-6 col-lg-3 pt-4" key={index}>
+                                    <div className="card h-100 rounded-0 cardproduct">
+                                        <img src={item.image3} className="card-img-top img-fluid p-3 object-fit-contain" alt={item.name} />
+                                        <div className="card-body pt-0">
+                                            <h5 className="card-title fs-5 text-success fw-bold text-uppercase">{item.name}</h5>
+                                            <h6 className="card-subtitle my-2 text-muted pera text-secondary">{item.title}</h6>
+                                            <p className="card-text mb-2 pera">{item.describ}</p>
+                                            <div className='d-flex align-items-center'>
+                                                {item.dprice && (
+                                                    <div className='fw-bold text-muted text-decoration-line-through'>
+                                                        <FaRupeeSign /> {item.dprice}
+                                                    </div>
+                                                )}
+                                                <div className={`fw-bold ${item.dprice ? 'ps-2' : ''}`}>
+                                                    <FaRupeeSign /> {item.mprice}
                                                 </div>
                                             </div>
                                         </div>
-                                    )
-                                })}
-                            </div>
-                        )
-                    })}
+                                        <button className='btn m-0 btn-success rounded-0 w-100 mt-2 fw-medium fs-5'>
+                                            <BsWhatsapp /> Get Now
+                                        </button>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    ))}
                 </div>
-            </div >
+            </div>
             <Footer />
-        </div >
-    )
+        </div>
+    );
 }
 
-export default Productdetail
+export default Productdetail;
