@@ -9,20 +9,47 @@ export const ProductItemlist = [
         description: "A high-quality product with amazing features.",
         products: [
             {
-                id: 'item1',
-                name: 'Item1',
+                id: 'Cold Drinks',
+                name: 'Cold Drinks',
+                title:"appy fizz 250 ML",
+                dprice:"",
+                mprice:"20.00",
                 image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
             {
-                id: 'item2',
-                name: 'Item2',
+                id: 'Juices',
+                name: 'Juices',
+                title:"ala grapes juice 6PCS",
+                dprice:"",
+                mprice:"55.00",
                 image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
             {
-                id: 'item3',
-                name: 'Item3',
+                id: 'BAKERY',
+                name: 'BAKERY',
+                title:"amul masti buttermilk 200ML",
+                dprice:"",
+                mprice:"15.00",
+                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
+            },
+            {
+                id: 'BAKERY',
+                name: 'BAKERY',
+                title:"amul masti buttermilk 200ML",
+                dprice:"",
+                mprice:"15.00",
+                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
+            },
+            {
+                id: 'BAKERY',
+                name: 'BAKERY',
+                title:"amul masti buttermilk 200ML",
+                dprice:"",
+                mprice:"15.00",
                 image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
@@ -38,21 +65,39 @@ export const ProductItemlist = [
         description: "A premium product with advanced functionality.",
         products: [
             {
-                id: 'item4',
-                name: 'Item4',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: 'STATIONERY AND KIDS',
+                name: 'STATIONERY AND KIDS',
+                title:"APSARA MATT MAGIC PENCIL |(100 PCS) 12%",
+                dprice:"",
+                mprice:"65.00",
+                image3:"https://img.freepik.com/premium-photo/photo-school-stationary-items-books-table_763111-41995.jpg",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
             {
-                id: 'item5',
-                name: 'Item5',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: 'STATIONERY',
+                name: 'STATIONERY',
+                title:"camlin spin eraser (20 PCS) jar",
+                dprice:"",
+                mprice:"9.00",
+                image3:"https://img.freepik.com/premium-photo/photo-school-stationary-items-books-table_763111-41995.jpg",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
             {
-                id: 'item6',
-                name: 'Item6',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: 'ESSENCE',
+                name: 'ESSENCE',
+                title:"cello tape 48 MM (TRANSPARENT)",
+                dprice:"",
+                mprice:"45.00",
+                image3:"https://img.freepik.com/premium-photo/photo-school-stationary-items-books-table_763111-41995.jpg",
+                describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
+            },
+            {
+                id: 'ESSENCE',
+                name: 'ESSENCE',
+                title:"cello tape 48 MM (TRANSPARENT)",
+                dprice:"",
+                mprice:"45.00",
+                image3:"https://img.freepik.com/premium-photo/photo-school-stationary-items-books-table_763111-41995.jpg",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
         ]
@@ -67,21 +112,40 @@ export const ProductItemlist = [
         description: "Top-notch quality for professional use.",
         products: [
             {
-                id: 'item7',
-                name: 'Item7',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: 'HOME & KITCHEN',
+                name: 'HOME & KITCHEN',
+                title:"goor met bhupes hand mate zebra",
+                dprice:"",
+                mprice:"100.00",
+                image3:"https://5.imimg.com/data5/ANDROID/Default/2022/2/SJ/HA/AJ/31543065/product-jpeg-500x500.jpeg",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
             {
-                id: 'item8',
-                name: 'Item8',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: 'CLEANERS',
+                name: 'CLEANERS',
+                title:"EXO ROUND DISHWASH BAR 500GM",
+                title:"exo round dishwash bar 500GM",
+                dprice:"",
+                mprice:"55.00",
+                image3:"https://5.imimg.com/data5/ANDROID/Default/2022/2/SJ/HA/AJ/31543065/product-jpeg-500x500.jpeg",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
             {
-                id: 'item9',
-                name: 'Item9',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: 'STEEL',
+                name: 'STEEL',
+                title:"flower design tapeli 103 (923 G))",
+                dprice:"",
+                mprice:"415.00",
+                image3:"https://5.imimg.com/data5/ANDROID/Default/2022/2/SJ/HA/AJ/31543065/product-jpeg-500x500.jpeg",
+                describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
+            },
+            {
+                id: 'STEEL',
+                name: 'STEEL',
+                title:"flower design tapeli 103 (923 G))",
+                dprice:"",
+                mprice:"415.00",
+                image3:"https://5.imimg.com/data5/ANDROID/Default/2022/2/SJ/HA/AJ/31543065/product-jpeg-500x500.jpeg",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
         ]
@@ -96,21 +160,48 @@ export const ProductItemlist = [
         description: "Affordable and reliable, perfect for daily use.",
         products: [
             {
-                id: 'item10',
-                name: 'Item10',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: 'frims & wafers',
+                name: 'frims & wafers',
+                title:"balaji khakhara jeera",
+                dprice:"",
+                mprice:"38.00",
+                image3: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-stU8J2-vuL-hh_6-wAa8n4IfPEIqa60ZzQ&s",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
             {
-                id: 'item11',
-                name: 'Item11',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: 'snacks & farsans',
+                name: 'snacks & farsans',
+                title:"Balaji salted wafers",
+                dprice:"40.00",
+                mprice:"38.00",
+                image3: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-stU8J2-vuL-hh_6-wAa8n4IfPEIqa60ZzQ&s",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
             {
-                id: 'item12',
-                name: 'Item12',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: ' wafers',
+                name: ' wafers',
+                title:"balaji wafers",
+                dprice:"",
+                mprice:"10.00",
+                image3: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-stU8J2-vuL-hh_6-wAa8n4IfPEIqa60ZzQ&s",
+                describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
+            },
+            {
+                id: ' wafers',
+                name: ' wafers',
+                title:"balaji wafers",
+                dprice:"",
+                mprice:"10.00",
+                image3: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-stU8J2-vuL-hh_6-wAa8n4IfPEIqa60ZzQ&s",
+                describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
+            },
+            {
+                id: ' wafers',
+                name: ' wafers',
+                title:"balaji wafers",
+                dprice:"",
+                mprice:"10.00",
+                image3: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-stU8J2-vuL-hh_6-wAa8n4IfPEIqa60ZzQ&s",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
         ]
@@ -125,21 +216,48 @@ export const ProductItemlist = [
         description: "Stylish and modern design with practical features.",
         products: [
             {
-                id: 'item13',
-                name: 'Item13',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: 'personal hygiene',
+                name: 'personal hygiene',
+                title:"boro plus crem 80ML",
+                dprice:"",
+                mprice:"142.00",
+                image3: "https://www.emamiltd.in/wp-content/themes/emami/images/pro_big_image.png",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
             {
-                id: 'item14',
-                name: 'Item14',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                id: 'HAIR CARE',
+                name: 'HAIR CARE',
+                title:"clean & clear facewash 100ML",
+                dprice:"",
+                mprice:"160.00",
+                image3: "https://www.emamiltd.in/wp-content/themes/emami/images/pro_big_image.png",
+                describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
+            },
+            {
+                id: 'SOAP & SHAMPOO',
+                name: 'SOAP & SHAMPOO',
+                title:"GHADI DETERGENT SOAP 10/-",
+                dprice:"",
+                mprice:"349.00",
+                image3: "https://www.emamiltd.in/wp-content/themes/emami/images/pro_big_image.png",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
             {
                 id: 'item15',
                 name: 'Item15',
-                image3: require("../Assets/Image/IMG-20241025-WA0004.jpg"),
+                title:"clinic plus S&T shampoo 650ML",
+                dprice:"",
+                mprice:"349.00",
+                image3: "https://www.emamiltd.in/wp-content/themes/emami/images/pro_big_image.png",
+                describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
+            },
+            {
+                id: 'item15',
+                name: 'Item15',
+                title:"clinic plus S&T shampoo 650ML",
+                dprice:"",
+                mprice:"349.00",
+                image3: "https://www.emamiltd.in/wp-content/themes/emami/images/pro_big_image.png",
                 describ: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, et?"
             },
         ]
