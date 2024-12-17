@@ -63,8 +63,8 @@ export const ProductItemlist = [
         tittle: "From cleaning supplies to home decor.",
         price: "$150",
         description: "A premium product with advanced functionality.",
-        products: [
-            {
+        products: [ 
+        {
                 id: 'STATIONERY AND KIDS',
                 name: 'STATIONERY AND KIDS',
                 title:"APSARA MATT MAGIC PENCIL |(100 PCS) 12%",
